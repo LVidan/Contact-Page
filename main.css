@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Opne Sasn', sans-serif;
+}
+.container  {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.contact-card {
+    width: 220px;
+    height: 140px;
+    display: inline-block;
+    background: #2C5364; 
+    margin: 10px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: transform .6s;
+}
+.contact-card a {
+    color: #fff;
+}:hover {
+    color: #fff;
+}
+.contact-card i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    line-height: 140px;
+    background: #0F2027;
+    z-index: 1;
+    transition: all .6s;
+}
+.contact-card span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0; 
+}
+.contact-card:hover i{
+    transform: translateY(-40px);
+}
